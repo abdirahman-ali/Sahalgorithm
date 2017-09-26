@@ -25,7 +25,7 @@ class MyBot < Ebooks::Bot
       # tweet("hi")
       # pictweet("hi", "cuteselfie.jpg")
     end
-scheduler.every '15m' do
+scheduler.every '1h' do
 model = Ebooks::Model.load("model/jaranjaro.model")
       statement = model.make_statement(140)
       tweet(statement)
